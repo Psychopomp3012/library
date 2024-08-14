@@ -1,1 +1,10 @@
+[build]
+# Set the working directory to backend
 working_directory = "./backend"
+
+# Specify the build command, if any
+command = "npm install && npm run build"
+
+# Optional: Specify the start command
+[run]
+command = "npm start"

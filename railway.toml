@@ -1,10 +1,26 @@
+# railway.toml
+
+[project]
+name = "library"
+
 [build]
-# Set the working directory to backend
-working_directory = "./backend"
+# Backend (Express)
+[build.backend]
+command = "cd backend && npm install"
 
-# Specify the build command, if any
-command = "npm install && npm run build"
+# Frontend (React)
+[build.frontend]
+command = "cd frontend && npm install && npm run build"
 
-# Optional: Specify the start command
-[run]
-command = "npm start"
+[start]
+# Backend (Express)
+[start.backend]
+command = "cd backend && npm run start"
+service = "backend"
+env = "node"
+
+# Frontend (React)
+[start.frontend]
+command = "cd frontend && npm install && npm run start"
+service = "frontend"
+env = "node"

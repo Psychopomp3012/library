@@ -25,7 +25,7 @@ app.use(express.json());
 // app.use(cors());
 
 // CORS configuration
-const allowedOrigins = ['http://localhost:3000', 'https://library-production-8c6a.up.railway.app'];
+const allowedOrigins = ['https://library-production-8c6a.up.railway.app'];
 app.use(cors({
   origin: function (origin, callback) {
     // allow requests with no origin (like mobile apps or curl requests)

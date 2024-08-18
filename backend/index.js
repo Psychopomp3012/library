@@ -26,7 +26,7 @@ app.use(express.json());
 
 app.use(
     cors({
-        origin: 'http://localhost:3000',
+        origin: 'https://library-production-8c6a.up.railway.app',
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type']
     })

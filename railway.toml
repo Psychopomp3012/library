@@ -3,15 +3,6 @@
 [project]
 name = "library"
 
-[build]
-# Backend (Express)
-[build.backend]
-command = "cd backend && npm install"
-
-# Frontend (React)
-[build.frontend]
-command = "cd frontend && npm install && npm run build"
-
 [start]
 # Backend (Express)
 [start.backend]

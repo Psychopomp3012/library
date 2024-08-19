@@ -9,7 +9,7 @@ const Home = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get('http://localhost:8081/books')
+            .get('https://library-production-8c6a.up.railway.app//books')
             .then(response => {
                 setBooks(response.data.data);
                 setLoading(false);

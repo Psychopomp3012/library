@@ -11,7 +11,7 @@ const ShowBook = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get(`http://localhost:8081/books/${id}`)
+            .get(`https://library-production-8c6a.up.railway.app/books/${id}`)
             .then((response) => {
                 setBook(response.data);
                 setLoading(false);
